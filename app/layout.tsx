@@ -1,7 +1,6 @@
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import SideMenu from '@/components/SideMenu';
-import { defaultData } from '@/config/defaultData';
 import { cn } from '@/lib/utils';
 import { ThemeProvider } from '@/providers/ThemeProvider';
 import { Analytics } from '@vercel/analytics/react';
@@ -18,7 +17,7 @@ export const metadata: Metadata = {
     template: '%s - RecodeLog',
   },
   description: '나만의 개발 블로그, 기록 또 기록',
-  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL ?? defaultData.url),
+  // metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL ?? defaultData.url),
   robots: 'index, follow',
   formatDetection: {
     telephone: false,
